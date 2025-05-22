@@ -5,8 +5,8 @@ import { AppService } from './app.service';
 // News Imports 
 
 import { TypeOrmModule} from '@nestjs/typeorm'
-import { TypeTasksModule } from './type_tasks/type_tasks.module';
-import { TasksModule } from './tasks/tasks.module';
+import { MajorsModule } from './majors/majors.module'; // Updated
+import { StudentsModule } from './students/students.module'; // Updated
 
 import { ConfigModule} from '@nestjs/config';
 
@@ -22,8 +22,8 @@ import { ConfigModule} from '@nestjs/config';
       entities:[__dirname + '/**/*.entity{.ts,.js}'],
       synchronize:false
     }),
-    TasksModule,
-    TypeTasksModule],
+    StudentsModule, // Updated
+    MajorsModule],  // Updated
   controllers: [AppController],
   providers: [AppService],
 })
