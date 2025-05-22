@@ -1,7 +1,7 @@
-import CompFormTasks from "../formTask";
-import CompShowTasks from "../showTasks";
+import CompFormStudent from "../formStudent";
+import CompShowStudents from "../showStudents";
 
-function CompBodyTasks() {
+function CompBodyStudents() {
 
 
 
@@ -14,11 +14,11 @@ function CompBodyTasks() {
         <div className="container">
             <div className="row">
                 <div className="col-md-4">
-                    <CompFormTasks></CompFormTasks>
+                    <CompFormStudent></CompFormStudent>
                 </div>
                 <div className="col-md-1"/>
                 <div className="col-md-7">
-                    <CompShowTasks></CompShowTasks>
+                    <CompShowStudents></CompShowStudents>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ function CompBodyTasks() {
     );
 }
 
-export default CompBodyTasks;
+export default CompBodyStudents;
 
 
 /*

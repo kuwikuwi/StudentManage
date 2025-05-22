@@ -2,9 +2,9 @@ import './App.css';
 
 // import components
 import CompNavbar from './components/navbar/navbar'
-import CompBodyTasks from './components/views/body'
+import CompBodyStudents from './components/views/bodyStudents'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import CompFormEditTasks from "./components/views/editTask";
+import CompFormEditStudent from "./components/views/editStudent";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
           </header>
           <BrowserRouter>
               <Routes>
-                  <Route path="/" element={<CompBodyTasks/>}></Route>
-                  <Route path="/tasks/:id/edit" element={<CompFormEditTasks/>}></Route>
+                  <Route path="/" element={<CompBodyStudents/>}></Route>
+                  <Route path="/students/:id/edit" element={<CompFormEditStudent/>}></Route>
 
               </Routes>
           </BrowserRouter>
